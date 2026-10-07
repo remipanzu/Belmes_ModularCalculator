@@ -28,7 +28,7 @@ Original file is located at
 """
 
 # This is a simple modular mini-calculator program that serves as the FA output.
-# It has separate functions for each operation, and it will ask the user to provide the numbers to work on and what operation to perform.
+# It ask the user to provide the numbers to work on and what operation to perform.
 
 # Calculates the sum of two quantities.
 def add_numbers(num1, num2):
@@ -48,14 +48,14 @@ def divide_numbers(num1, num2):
     return "Cannot divide by zero."
   return num1 / num2
 
-# Prompt the user for the first and second numbers and provide the list of available operations.
+# Prompt the user for the first and second numbers.
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
 print("\nChoose operation:\n1 - Addition\n2 - Subtraction\n3 - Multiplication\n4 - Division")
 
-# Assign result to a placeholder value (None), then prompt the user for their choice.
-# Then, performs the corresponding operation through an if-elif selection.
+# Prompt the user for their choice.
+# Then, perform the corresponding operation through an if-elif selection.
 choice = int(input("\nEnter choice: "))
 result = None
 
